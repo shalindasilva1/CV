@@ -8,15 +8,15 @@
         body {
             font-family: sans-serif;
             line-height: 1.6;
-            margin: 40px;
+            margin: 20px; /* Adjust default margin for smaller screens */
             color: #333;
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 95%; /* Adjust container width for better mobile fit */
+            margin: 20px auto; /* Adjust container margin */
             background-color: #fff;
-            padding: 30px;
+            padding: 20px; /* Adjust container padding */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -24,24 +24,24 @@
             color: #007bff;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 2em; /* Adjust font size for smaller screens */
             margin-bottom: 5px;
         }
         h2 {
-            font-size: 1.8em;
-            margin-top: 20px;
-            border-bottom: 2px solid #eee;
+            font-size: 1.5em; /* Adjust font size for smaller screens */
+            margin-top: 15px; /* Adjust margin for smaller screens */
+            border-bottom: 1px solid #eee; /* Adjust border thickness */
             padding-bottom: 5px;
         }
         h3 {
-            font-size: 1.4em;
-            margin-top: 15px;
+            font-size: 1.2em; /* Adjust font size for smaller screens */
+            margin-top: 10px; /* Adjust margin for smaller screens */
         }
         .profile {
-            margin-bottom: 20px;
+            margin-bottom: 15px; /* Adjust margin for smaller screens */
         }
         .contact-info {
-            font-size: 0.9em;
+            font-size: 0.8em; /* Adjust font size for smaller screens */
             color: #777;
         }
         .contact-info a {
@@ -52,25 +52,58 @@
             text-decoration: underline;
         }
         .section {
-            margin-bottom: 25px;
+            margin-bottom: 20px; /* Adjust margin for smaller screens */
         }
         .job-title {
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 3px; /* Adjust margin for smaller screens */
         }
         .company-date {
             font-style: italic;
             color: #777;
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* Adjust margin for smaller screens */
+            font-size: 0.8em; /* Adjust font size for smaller screens */
         }
         .tech-stack {
-            font-size: 0.85em;
+            font-size: 0.75em; /* Adjust font size for smaller screens */
             color: #555;
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* Adjust margin for smaller screens */
         }
         .interest-list {
             padding-left: 20px;
             list-style-type: disc;
+            font-size: 0.9em; /* Adjust font size for smaller screens */
+        }
+
+        /* Media query for screens smaller than 768px (typical for phones) */
+        @media (max-width: 768px) {
+            body {
+                margin: 15px;
+            }
+            .container {
+                padding: 15px;
+                margin: 15px auto;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+                margin-top: 12px;
+            }
+            h3 {
+                font-size: 1.1em;
+                margin-top: 8px;
+            }
+            .profile {
+                margin-bottom: 12px;
+            }
+            .section {
+                margin-bottom: 18px;
+            }
+            ul {
+                padding-left: 15px;
+            }
         }
     </style>
 </head>
